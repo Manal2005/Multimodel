@@ -28,7 +28,7 @@ def parse_opts():
     parser.add_argument('--momentum', default=0.9, type=float, help='Momentum')
     parser.add_argument('--lr_steps', default=[40, 55, 65, 70, 200, 250], type=float, nargs="+", metavar='LRSteps', help='epochs to decay learning rate by 10')
     parser.add_argument('--dampening', default=0.9, type=float, help='dampening of SGD')
-    parser.add_argument('--weight_decay', default=1e-3, type=float, help='Weight Decay')
+    parser.add_argument('--weight_decay', default=1e-2, type=float, help='Weight Decay')
     parser.add_argument('--lr_patience', default=10, type=int, help='Patience of LR scheduler. See documentation of ReduceLROnPlateau.')
     parser.add_argument('--batch_size', default=20, type=int, help='Batch Size')
     parser.add_argument('--n_epochs', default=15, type=int, help='Number of total epochs to run')
